@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh Formulir</title>
+</head>
+<body>
+  <h2>Formulir Contoh</h2>
+  <form action="proses.php" method="POST">
+    <!-- Input Teks -->
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required>
+    <br><br>
+
+    <!-- Input Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br><br>
+
+    <!-- Input Radio -->
+    <label>Jenis Kelamin:</label>
+    <input type="radio" id="pria" name="jenis_kelamin" value="Pria">
+    <label for="pria">Pria</label>
+    <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita">
+    <label for="wanita">Wanita</label>
+    <br><br>
+
+    <!-- Input Checkbox -->
+    <label>Hobi (Pilih beberapa):</label>
+    <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+    <label for="membaca">Membaca</label>
+    <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+    <label for="olahraga">Olahraga</label>
+    <input type="checkbox" id="musik" name="hobi[]" value="Musik">
+    <label for="musik">Musik</label>
+    <br><br>
+
+    <!-- Input Select (Dropdown) -->
+    <label for="negara">Negara:</label>
+    <select id="negara" name="negara">
+      <option value="Indonesia">Indonesia</option>
+      <option value="Malaysia">Malaysia</option>
+      <option value="Singapura">Singapura</option>
+      <option value="Brunei">Brunei</option>
+    </select>
+    <br><br>
+
+    <!-- Input Text Area -->
+    <label for="pesan">Pesan:</label><br>
+    <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea>
+    <br><br>
+
+    <!-- Input Tanggal -->
+    <label for="tanggal">Tanggal Lahir:</label>
+    <input type="date" id="tanggal" name="tanggal_lahir">
+    <br><br>
+
+    <!-- Tombol Submit -->
+    <input type="submit" value="Kirim">
+  </form>
+</body>
+</html>
